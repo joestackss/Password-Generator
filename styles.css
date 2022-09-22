@@ -109,12 +109,6 @@ hr {
   margin-top: 2em;
 }
 
-
-/* MEDIA QUERIES (MEDIUM DEVICES) */
-@media screen and (max-width: 1024px) {
-
-}
-
 /* MEDIA QUERIES (SMALL DEVICES) */
 @media screen and (max-width: 600px) {
 
@@ -148,11 +142,11 @@ hr {
   }
 
   .btn-generate { 
-    width: 100%;
+    min-width: 100%;
   }
 
   .btn-generated {
-    width: 100%;
+    min-width: 100%;
     height: 39px;
     transition: var(--transition);
     margin-bottom: 5em;
