@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Password Generator</title>
-    <meta content="" />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
+<head>
+  <title>Password Generator</title>
+  <meta content="" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <section>
     <main class="container">
       <div class="inner-container">
         <h2>
           Generate a
-          <span class="breaklineColor"
-            ><br />
-            random password</span
-          >
+          <span class="breaklineColor"><br />
+            random password</span>
         </h2>
         <p>Never use an insecure password again.</p>
         <button class="btn-generate" id="btn-generate" onclick="gfg_Run()">
@@ -30,12 +24,15 @@
         </button>
         <hr />
         <div class="btn-generated-style">
-          <button class="btn-generated" id="generate">123456</button>
-          <button class="btn-generated" id="generate1">123456</button>
+          <button class="btn-generated" id="generate"></button>
+          <button class="btn-generated" id="generate1"></button>
         </div>
       </div>
     </main>
+  </section>
 
-    <script src="index.js"></script>
-  </body>
+  <script src="index.js"></script>
+  <script src="dist/clipboard.min.js"></script>
+</body>
+
 </html>

@@ -1,15 +1,23 @@
 body {
   font-family: "Karla", sans-serif;
   background-color: antiquewhite;
+  margin-top: 0 auto;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .container {
   background-color: #1f2937;
-  height: 70%;
+  height: 60%;
   width: 550px;
   max-width: 550px;
   margin: 0 auto;
   padding: 64px 62px;
+  
 }
 
 .inner-container {
