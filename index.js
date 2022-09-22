@@ -1,5 +1,7 @@
 let generateInput = document.getElementById("generate");
 let generateInput1 = document.getElementById("generate1");
+let endP = document.getElementById('endP')
+endP.textContent = "Click on the generated password to copy it!"
 
 new ClipboardJS("#generate");
 
@@ -29,13 +31,19 @@ function gfg_Run() {
   generateInput.textContent = generateP();
   generateInput1.textContent = generateP();
 
-  // // Select the text field
-  // generateInput.select();
-  // generateInput.setSelectionRange(0, 99999); // For mobile devices
+}
 
-  // // Copy the text inside the text field
-  // navigator.clipboard.writeText(generateInput.value);
 
-  // // Alert the copied text
-  // alert("Copied the text: " + generateInput.value);
+async function copyTextOne()
+{
+    await navigator.clipboard.writeText(generateInput.textContent);
+    endP.textContent = "Copied: " + generateInput.textContent;
+    // alert("Copied the first Generated Password: " + passOne.textContent);
+}
+
+async function copyTextTwo()
+{
+    await navigator.clipboard.writeText(generateInput1.textContent);
+    // alert("Copied the second Generated Password: " + passTwo.textContent)
+    endP.textContent = "Copied: " + generateInput1.textContent;
 }

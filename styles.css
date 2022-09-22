@@ -1,7 +1,14 @@
+:root {
+  --transition: all 400ms ease;
+}
+
+html {
+  font-size: 1rem;
+}
+
 body {
   font-family: "Karla", sans-serif;
   background-color: antiquewhite;
-  margin-top: 0 auto;
 }
 
 section {
@@ -12,12 +19,12 @@ section {
 
 .container {
   background-color: #1f2937;
-  height: 60%;
-  width: 550px;
+  height: auto;
+  width: 100%;
   max-width: 550px;
   margin: 0 auto;
   padding: 64px 62px;
-  
+
 }
 
 .inner-container {
@@ -61,10 +68,15 @@ p {
   color: #fff;
   margin-bottom: 10px;
   font-family: "Inter", sans-serif;
+  transition: var(--transition);
+}
+
+.btn-generate:hover {
+  transform: scale(1.1);
 }
 
 .btn-generated {
-font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
   width: 211px;
   height: 39px;
   background-color: #273549;
@@ -72,6 +84,11 @@ font-family: "Inter", sans-serif;
   color: #4adf86;
   margin: 0 15px 0 0;
   border: 0;
+  transition: var(--transition);
+}
+
+.btn-generated:hover {
+  transform: scale(1.1);
 }
 
 .btn-generated-style {
@@ -85,4 +102,65 @@ hr {
   text-align: left;
   margin: 10px 0;
   padding: 0;
+}
+
+
+#endP {
+  margin-top: 2em;
+}
+
+
+/* MEDIA QUERIES (MEDIUM DEVICES) */
+@media screen and (max-width: 1024px) {
+
+}
+
+/* MEDIA QUERIES (SMALL DEVICES) */
+@media screen and (max-width: 600px) {
+
+  html {
+    font-size: .8rem;
+  }
+
+  section {
+    min-height: 50vh;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+  
+
+  .container {
+    background-color: #1f2937;
+    height: auto;
+    width: 70%;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 64px 42px;
+    text-align: left;
+  }
+
+  hr {
+    border: 1px solid #2f3e53;
+    width: 100%;
+    max-width: 446px;
+    height: 0px;
+    text-align: left;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  .btn-generated {
+    font-family: "Inter", sans-serif;
+    width: 211px;
+    height: 39px;
+    background-color: #273549;
+    border-radius: 6px;
+    color: #4adf86;
+    margin: 0 15px 0 0;
+    border: 0;
+    transition: var(--transition);
+    margin-bottom: 5em;
+  }
+
 }
